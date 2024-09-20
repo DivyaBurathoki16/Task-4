@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+            background-color: azure;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .main {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            transition: transform 0.2s;
+            width: 500px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: black;
+            font-weight: bold;
+            font-family: 'Times New Roman';
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Form</h1>
+        <form action= >
+            <label for="Name">Full Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter Your Full Name" required>
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" min="18" required>
+            <label for="Birthdate">Birthdate</label>
+            <input type="date" id="Birthdate" name="Birthdate" required>
+            <label for="gender">Select your gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer-not-to-say">Other</option>
+            </select>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address" placeholder="Enter Your residential address" required>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter a valid Email" required>
+            <label for="Contact number">Contact number:</label>
+            <input type="tel" id="Contact number" name="Contact_number" placeholder="Enter your Contact number" required>
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input type="submit" id="Submit" name="Submit" required >
+        </form>
+    </div>
+    
+    </script>
+</body>
+
+</html>
